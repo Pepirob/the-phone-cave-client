@@ -1,4 +1,3 @@
-import React from "react";
 import ItemPhone from "./ItemPhone";
 
 function ListPhone() {
