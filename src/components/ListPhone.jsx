@@ -1,9 +1,11 @@
 import ItemPhone from "./ItemPhone";
 
-function ListPhone() {
+function ListPhone({ phones }) {
   return (
     <>
-      <ItemPhone />
+      {phones.map((phone) => {
+        return <ItemPhone key={phone.id} phone={phone} />;
+      })}
     </>
   );
 }
