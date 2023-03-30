@@ -1,5 +1,7 @@
 import { Route, Routes } from "react-router-dom";
 import "./App.css";
+import Error from "./pages/errors/Error";
+import NotFound from "./pages/errors/NotFound";
 import Home from "./pages/Home";
 
 function App() {
@@ -9,6 +11,9 @@ function App() {
         <Route path="/">
           <Home />
         </Route>
+
+        <Route path="/error" element={<Error />} />
+        <Route path="/*" element={<NotFound />} />
       </Routes>
     </div>
   );
