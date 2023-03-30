@@ -1,7 +1,7 @@
 import React from "react";
 
-function ItemPhone() {
-  return <div>ItemPhone</div>;
+function ItemPhone({ phone }) {
+  return <></>;
 }
 
 export default ItemPhone;
